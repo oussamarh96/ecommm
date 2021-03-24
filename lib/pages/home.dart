@@ -95,8 +95,8 @@ class _HomePageState extends State<HomePage> {
 
             InkWell(
               onTap: () {
-               // Navigator.push(context,
-                  //  MaterialPageRoute(builder: (context) => new Appp()));
+                Navigator.push(context,
+                   MaterialPageRoute(builder: (context) => new Login()));
               },
               child: ListTile(
                 title: Text('My account'),
