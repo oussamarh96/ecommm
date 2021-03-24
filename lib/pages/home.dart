@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
-import 'package:firebase_core/firebase_core.dart';
+//import 'package:firebase_core/firebase_core.dart';
 import 'package:myapp/main.dart';
 
 // my own imports
@@ -9,6 +9,7 @@ import 'package:myapp/componets/Products.dart';
 import 'package:myapp/pages/cart.dart';
 import 'package:myapp/pages/login.dart';
 import 'package:myapp/main.dart';
+import 'test.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -51,10 +52,7 @@ class _HomePageState extends State<HomePage> {
               Icons.search,
               color: Color(0xFFF1F3F6),
             ),
-            onPressed: () {
-              Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => new Appp()));
-            },
+            onPressed: () {},
           ),
           new IconButton(
               icon: Icon(
@@ -97,8 +95,8 @@ class _HomePageState extends State<HomePage> {
 
             InkWell(
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => new Appp()));
+               // Navigator.push(context,
+                  //  MaterialPageRoute(builder: (context) => new Appp()));
               },
               child: ListTile(
                 title: Text('My account'),
